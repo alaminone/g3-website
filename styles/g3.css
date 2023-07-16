@@ -137,6 +137,30 @@ main{
     font-weight: 600;
     margin-top: 5px;
 }
+/* finish facts dections */
+
+.sponsprs{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.sponspors-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.sponspors-discription{
+    color: #727272;
+}
+.sponspors-logo{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    align-items: center;
+    gap: 40px;
+}
+
+
 
 /* media queries */
 
@@ -148,7 +172,8 @@ main{
     }
     nav,
     .main-team,
-    .fact-card-container
+    .fact-card-container,
+    .sponspors-logo
     {
         flex-direction: column;
     }
@@ -170,7 +195,7 @@ main{
     header{
         padding: 50px;
     }
-    nav, .main-team{
+    nav, .main-team, .sponspors-logo{
         flex-direction: column;
     }
  } 
