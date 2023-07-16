@@ -105,9 +105,73 @@ main{
     color: #131313;
 }
 /* finish team content */
+
+.features{
+    display: flex;
+    margin-top: 150px;
+    gap: 130px;
+}
+.features-title{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+.features .features-title{
+border-left: 5px solid #FF900E;
+padding-left: 20px;
+}
+
+.features-discription{
+    color: #727272;
+    margin-bottom: 20px;
+}
+.features-content .fcards{
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.cards-titlt{
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+.cards-discription{
+    color: #727272;
+}
+.feautres-img img{
+    height: 90%;
+    margin-left: 90px;
+}
+.ten-years{
+     border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 340px;
+    color: #FFF;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    bottom: 130px;
+}
+.ten-years h2{
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0px;
+}
+.ten-years p{
+    font-size: 1.5rem;
+}
+
+
+/* finish features section */
 .fact-card-container{
     display: flex;
     justify-content: space-around;
+    margin-top: 100px;
+
 }
 .facts-title{
     font-size: 4rem;
@@ -159,9 +223,19 @@ main{
     align-items: center;
     gap: 40px;
 }
+/* finish sponspors section */
 
-
-
+.footer{
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin: 220px 240px;
+}
+.footer-discription{
+    color: #424242;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 /* media queries */
 
 /* mobil */
@@ -173,9 +247,14 @@ main{
     nav,
     .main-team,
     .fact-card-container,
-    .sponspors-logo
+    .sponspors-logo,
+    .features
     {
         flex-direction: column;
+    }
+    .feautres-img img{
+        width: 90%;
+        max-width: 300px;
     }
     .team-img{
         grid-template-columns: 1fr;
@@ -188,16 +267,28 @@ main{
     .fact-card-container{
         gap: 20px;
     }
+    .footer{
+        margin:5px 10px;
  }
-    
+}
  /* tab */
  @media screen and (min-width:576px) and (max-width:960px){
     header{
         padding: 50px;
     }
-    nav, .main-team, .sponspors-logo{
+    nav, 
+    .main-team,
+    .fact-card-container, 
+    .sponspors-logo,
+    .features{
         flex-direction: column;
+    }
+    .fact-card-container{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .footer{
+        margin: 10px 20px;
     }
  } 
     
- 
